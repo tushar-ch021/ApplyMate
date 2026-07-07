@@ -1,0 +1,6 @@
+{
+  "name": "ApplyMate",
+  "description": "A comprehensive AI-powered Resume Builder and ATS Analyzer designed to help job seekers optimize their resumes, align keywords, generate cover letters, and prepare for interviews using Gemini AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

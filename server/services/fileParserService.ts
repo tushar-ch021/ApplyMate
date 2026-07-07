@@ -1,8 +1,15 @@
 import { createRequire } from "module";
 import mammoth from "mammoth";
 
-const require = createRequire(import.meta.url);
-const pdf = require("pdf-parse");
+const getRequire = () => {
+  if (typeof require !== "undefined") {
+    return require;
+  }
+  return createRequire(import.meta.url);
+};
+
+const customRequire = getRequire();
+const pdf = customRequire("pdf-parse");
 
 /**
  * Extracts raw text from an uploaded file buffer based on its mime type
